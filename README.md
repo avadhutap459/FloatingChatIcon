@@ -2,6 +2,6 @@
 
 
 2.1 Create the folder <br>
-    Open PowerShell: <br>
-      mkdir FloatingChatPlatform <br>
-      cd FloatingChatPlatform <br>
+&nbsp;Open PowerShell: <br>
+&nbsp;&nbsp;mkdir FloatingChatPlatform <br>
+&nbsp;&nbsp;cd FloatingChatPlatform <br>
