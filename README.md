@@ -50,13 +50,13 @@ ng version
 
 
 
-# **Step 5 – Create the JavaScript SDK**
+# **Step 2 – Create the JavaScript SDK**
 
 This SDK will create the floating chat icon on every host website.
 
 The host website will **not** need Angular or Node.js installed.
 
-## **5.1 Create SDK folder structure**
+## **2.1 Create SDK folder structure**
 
 Open a new PowerShell window at the root project directory:
 
@@ -88,7 +88,7 @@ chat-widget-sdk/
 └── package.json
 ```
 
-## **5.2 Create the SDK file**
+## **2.2 Create the SDK file**
 
 Create the following file:
 
@@ -98,11 +98,11 @@ Replace the file contents with the following code:
 
 
 
-# **Step 6 – Build the JavaScript SDK**
+# **Step 3 – Build the JavaScript SDK**
 
 The JavaScript SDK must be compiled into a distributable file that can be embedded into any host website.
 
-## **6.1 Install esbuild**
+## **3.1 Install esbuild**
 
 Open PowerShell:
 
@@ -112,7 +112,7 @@ cd FloatingChatPlatform\chat-widget-sdk
 npm install --save-dev esbuild
 ```
 
-## **6.2 Update package.json**
+## **3.2 Update package.json**
 
 Open the following file:
 
@@ -130,7 +130,7 @@ Add the following build script inside the existing `scripts` section:
 
 <text color="secondary">Keep the existing dependencies, package name, and other package properties. If a `scripts` section already exists, add or update only the `build` entry.</text>
 
-## **6.3 Build the SDK**
+## **3.3 Build the SDK**
 
 Run the following command in PowerShell:
 
@@ -146,13 +146,13 @@ dist/
 ```
 
 
-# **Step 7 – Create a Test Website**
+# **Step 4 – Create a Test Website**
 
 Before deploying the SDK, we need to test it on a website that is not built using Angular.
 
 We will use plain HTML to simulate an external customer website.
 
-## **7.1 Create test website folder**
+## **4.1 Create test website folder**
 
 From the root project directory, open PowerShell:
 
@@ -169,7 +169,7 @@ test-website/
 └── index.html
 ```
 
-## **7.2 Create index.html**
+## **4.2 Create index.html**
 
 Create the following file:
 
