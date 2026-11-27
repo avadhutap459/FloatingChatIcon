@@ -142,3 +142,33 @@ Expected output folder structure:
 dist/
 └── chat-widget.min.js
 ```
+
+
+# **Step 7 – Create a Test Website**
+
+Before deploying the SDK, we need to test it on a website that is not built using Angular.
+
+We will use plain HTML to simulate an external customer website.
+
+## **7.1 Create test website folder**
+
+From the root project directory, open PowerShell:
+
+```powershell
+cd FloatingChatPlatform
+
+mkdir test-website
+```
+
+Create the following file structure:
+
+```text
+test-website/
+└── index.html
+```
+
+## **7.2 Create index.html**
+
+Create the following file:
+
+`FloatingChatPlatform/test-website/index.html`
