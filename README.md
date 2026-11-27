@@ -172,3 +172,31 @@ test-website/
 Create the following file:
 
 `FloatingChatPlatform/test-website/index.html`
+
+
+
+# **Step 9 – Run the Test Website**
+
+Open **PowerShell Terminal 2**.
+
+Navigate to the test website folder:
+
+```powershell
+cd FloatingChatPlatform\test-website
+```
+
+Start a temporary HTTP server using Python:
+
+```powershell
+python -m http.server 8000
+```
+
+If the `python` command isn't recognized, try:
+
+```powershell
+py -m http.server 8000
+```
+
+Open the following URL in your browser:
+
+[http://localhost:8000/](http://localhost:8000/)
