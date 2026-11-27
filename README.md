@@ -1,7 +1,7 @@
 # FloatingChatIcon
 
 
-### 2.1 Create the folder
+### 1 Create the folder
 
 Open PowerShell:
 
@@ -10,7 +10,7 @@ mkdir FloatingChatPlatform
 cd FloatingChatPlatform
 ```
 
-### 2.2 Create the following folder structure
+### 1.2 Create the following folder structure
 
 Create the following folder structure:
 
@@ -18,15 +18,19 @@ Create the following folder structure:
 FloatingChatPlatform/
 │
 ├── chat-widget-sdk/
+│   ├── src/
+│   └── dist/
+│       └── chat-widget.min.js
 │
-└── chat-api/
+└── test-website/
+    └── index.html
 ```
 
 Run the following commands in PowerShell:
 
 ```powershell
 mkdir chat-widget-sdk
-mkdir chat-api
+mkdir test-website
 ```
 
 # **Step 3 – Create Angular Chat UI**
