@@ -33,9 +33,7 @@ mkdir chat-widget-sdk
 mkdir test-website
 ```
 
-# **Step 3 – Create Angular Chat UI**
-
-## **3.1 Install Angular CLI**
+### 1.3 Install Angular CLI
 
 Install Angular CLI globally using PowerShell:
 
