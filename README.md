@@ -177,7 +177,7 @@ Create the following file:
 
 
 
-# **Step 9 – Run the Test Website**
+# **Step 5 – Run the Test Website**
 
 Open **PowerShell Terminal 2**.
 
@@ -201,4 +201,4 @@ py -m http.server 8000
 
 Open the following URL in your browser:
 
-[http://localhost:8000/](http://localhost:8000/)
+[http://localhost:8000/test-website/](http://localhost:8000/test-website/)
