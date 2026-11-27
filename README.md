@@ -93,3 +93,52 @@ Create the following file:
 `chat-widget-sdk/src/chat-widget.js`
 
 Replace the file contents with the following code:
+
+
+
+# **Step 6 – Build the JavaScript SDK**
+
+The JavaScript SDK must be compiled into a distributable file that can be embedded into any host website.
+
+## **6.1 Install esbuild**
+
+Open PowerShell:
+
+```powershell
+cd FloatingChatPlatform\chat-widget-sdk
+
+npm install --save-dev esbuild
+```
+
+## **6.2 Update package.json**
+
+Open the following file:
+
+`chat-widget-sdk/package.json`
+
+Add the following build script inside the existing `scripts` section:
+
+```json
+{
+  "scripts": {
+    "build": "esbuild src/chat-widget.js --bundle --minify --outfile=dist/chat-widget.min.js"
+  }
+}
+```
+
+<text color="secondary">Keep the existing dependencies, package name, and other package properties. If a `scripts` section already exists, add or update only the `build` entry.</text>
+
+## **6.3 Build the SDK**
+
+Run the following command in PowerShell:
+
+```powershell
+npm run build
+```
+
+Expected output folder structure:
+
+```text
+dist/
+└── chat-widget.min.js
+```
